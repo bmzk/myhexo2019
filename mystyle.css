@@ -1,0 +1,16 @@
+.map {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+div{
+    text-align:center;
+    /*这是另一个注释*/
+    color:black;
+    font-family:arial;
+}
+.div1{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count:5;
+}

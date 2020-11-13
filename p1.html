@@ -1,25 +1,845 @@
-<html>
-    <head>
-        <title>test page 1</title>
-    </head>
-    <body>
-        <section>
-            <a>fdgf</a>
-            <br>
-            d
-            <img src="img/2019-08-020.png">
-            <br>
-            Date:
-            <input type="date">
-            <input type="submit">
-            <input type="month">
-            <input type="week">
-            <input type="button" width="55">
-            <input type="search" title="search">
-            <input type="number" title="number">
-            <input type="color" title="color">
-            <input type="checkbox" title="checkbox">
-        </section>
-        <input type="range" min="1" max="100">
-    </body>
+<!DOCTYPE html>
+<html class="expanded">
+<head>
+    <!--HTML meta 标签描述 HTML 文档的元数据-->
+    <!-- http-equiv : 把 content 属性关联到 HTTP 头部。-->
+    <!--content定义与 http-equiv 或 name 属性相关的元信息。描述 HTML 文档内的元数据：-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 网页的图标 -->
+    <link rel="icon" href="./doc/pic/p1.ico">
+    <title>新闻模板</title>
+    <meta name="description" content="对网页的描述。">
+</head>
+
+<style type="text/css" id="1394680599894"></style>
+
+<body style="zoom: 1; margin-top: 40px;">
+    <!-- 菜单栏 -->
+    <!-- 菜单栏
+    <div id="headerwrapper">
+
+    <div id="menu" class="mod-navbar menu-fix-top" alog-group="home-menu">
+        <div id="channel-shanghai" class="channel-shanghai clearfix" style="display: none; z-index: 9;">
+            <div class="menu-list">
+                <ul class="clearfix lavalamp" style="position: relative;">
+                    <div class="lavalamp-object"
+                        style="position: absolute; width: 0px; height: 0px; top: 0px; left: 0px;"></div>
+                    <li class="navitem-index current active lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/">首页</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/guonei">国内</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/guoji">国际</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/mil">军事</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/finance">财经</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/ent">娱乐</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/sports">体育</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/internet">互联网</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/tech">科技</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/game">游戏</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/lady">女人</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/auto">汽车</a>
+                    </li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/house">房产</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="slogan"></i>
+        </div>
+        <div id="channel-all" class="channel-all clearfix" style="z-index: 9;">
+            <div class="menu-list">
+                <ul class="clearfix lavalamp" style="position: relative;">
+                    <div class="lavalamp-object"
+                        style="position: absolute; width: 68px; height: 40px; top: 0px; left: 0px;">
+                    </div>
+                    <li class="navitem-index current active lavalamp-item" style="z-index: 5; position: relative;">
+                        <a href="https://news.baidu.com/">首页</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/guonei">国内</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/guoji">国际</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/mil">军事</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/finance">财经</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/ent">娱乐</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/sports">体育</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/internet">互联网</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/tech">科技</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/game">游戏</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/lady">女人</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/auto">汽车</a></li>
+                    <li class="lavalamp-item" style="z-index: 5; position: relative;"><a
+                            href="https://news.baidu.com/house">房产</a></li>
+                </ul>
+            </div>
+            <i class="slogan"></i>
+        </div>
+    </div>
+    </div>
+    -->
+
+
+
+    <!-- 新闻 -->
+    <div id="body" alog-alias="b">
+        <div class="column clearfix" id="focus-top" style="margin-top: 12px; margin-bottom: 31px;">
+            <div class="l-left-col" alog-group="focus-top-left">
+                <div id="left-col-wrapper">
+                    <!-- 热点要闻 -->
+                    <div id="headline-tabs" class="mod-headline-tab">
+                        <ul class="clearfix">
+                            <li class="active">
+                                <a href="javascript:void(0);" data-control="pane-news">热点要闻</a>
+                            </li>
+                        </ul>
+                        <a id="tab-login" class="tab-login tab-enter-recommend" href="javascript:void(0);"
+                            onclick="return false" mon="m=53&amp;a=3" style="display: inline;">
+                        </a>
+                    </div>
+                    <div class="mod-tab-content">
+                        <div id="pane-news" class="mod-tab-pane active">
+                            <div class="hotnews" alog-group="focustop-hotnews">
+                                <ul>
+                                    <li class="hdline0">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="https://xhpfmapi.zhongguowangshi.com/vh512/share/9511495?channel=weixin"
+                                                target="_blank" class="a3"
+                                                mon="ct=1&amp;a=1&amp;c=top&amp;pn=0">中央关于十四五规划和二〇三五年远景目标建议</a></strong>
+                                    </li>
+                                    <li class="hdline1">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="http://www.xinhuanet.com/politics/leaders/2020-11/03/c_1126693341.htm"
+                                                target="_blank" mon="r=1"><b>习近平：关于十四五规划《建议》的说明</b></a>
+                                        </strong>
+                                    </li>
+                                    <li class="hdline2">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="http://politics.people.com.cn/n1/2020/1103/c1001-31916119.html"
+                                                target="_blank" class="a3"
+                                                mon="ct=1&amp;a=1&amp;c=top&amp;pn=1">为全面建设社会主义现代化国家开好局、起好步</a></strong>
+                                    </li>
+                                    <li class="hdline3">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="https://baijiahao.baidu.com/builder/preview/s?id=1682327216352342793"
+                                                target="_blank" mon="r=1">想好好聊个天 太难了</a>
+                                            <i style="font-size: 12px">&nbsp;</i><a
+                                                href="http://www.ce.cn/xwzx/gnsz/gdxw/202011/03/t20201103_35965201.shtml"
+                                                target="_blank" mon="r=1">把发展着力点放在实体经济上</a>
+                                        </strong>
+                                    </li>
+                                    <li class="hdline4">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="http://news.cpd.com.cn/n3559/202011/t20201101_938118.html"
+                                                target="_blank" class="a3"
+                                                mon="ct=1&amp;a=1&amp;c=top&amp;pn=2">技能大赛擂响战鼓 网安高手沪上论剑</a></strong>
+                                    </li>
+                                    <li class="hdline5">
+                                        <i class="dot"></i>
+                                        <strong>
+                                            <a href="http://news.cpd.com.cn/n3559/202011/t20201101_938113.html"
+                                                target="_blank" mon="r=1">全国网络与信息安全管理职业技能大赛举行</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="ulist focuslistnews">
+                                <li class="bold-item">
+                                    <span class="dot"></span>
+                                    <a href="https://3w.huanqiu.com/a/ebfc91/40XtXDmA6WW?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=1" target="_blank">驻欧盟发言人：香港的司法事务不容欧盟方面干预</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40Y7Yscf0sy?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=2" target="_blank">商务部：9月我国服务出口增速由负转正</a>
+                                </li>
+                                <li>
+                                    <a href="https://baijiahao.baidu.com/s?id=1682334015221167904&amp;wfr=content"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=3" target="_blank">阿富汗喀布尔大学遭遇恐袭
+                                        外交部：没有中国公民伤亡<span class="related-video-icon"></span></a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/cf8a84/40Y7qABp27o?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=4"
+                                        target="_blank">外交部回应“中国军队‘抢占’尼泊尔土地”报道：纯属谣言</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/5e93e2/40YACvJZdYv?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=5" target="_blank">美国半月内推动三次对台军售
+                                        专家：真实意图是拉选票</a></li>
+                                <li>
+                                    <a href="https://baijiahao.baidu.com/s?id=1682332319079759182&amp;wfr=content"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=6" target="_blank">中使馆：维也纳恐袭事件致一奥籍华人身亡
+                                        一中国公民轻伤</a></li>
+                            </ul>
+                            <ul class="ulist focuslistnews">
+                                <li class="bold-item">
+                                    <span class="dot"></span>
+                                    <a href="https://3w.huanqiu.com/a/a4d1ef/40Xq8tmK6fe?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=7" target="_blank">11月起，社保迎来一个大变化，影响你的钱袋子</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40YCPOk2lWJ?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=8" target="_blank">2019年全国教育经费执行情况统计公告发布</a>
+                                </li>
+                                <li>
+                                    <a href="https://baijiahao.baidu.com/s?id=1682302432446863602&amp;wfr=content"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=9"
+                                        target="_blank">国家药品集中采购，55种药品降价，给患者省了多少钱？<span
+                                            class="related-video-icon"></span></a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40Y9SS6dAVx?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=10" target="_blank">林郑月娥：香港限制社交距离措施将延长一周</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/c36dc8/40Y3U73wgDu?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=11" target="_blank">15岁男孩被控在新华社香港分社外参与暴动
+                                        今天提讯</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/c36dc8/40Y2fvFuTWv?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=12"
+                                        target="_blank">“起底”港警及其家属，香港一电信公司员工被判监禁两年</a></li>
+                            </ul>
+                            <ul class="ulist focuslistnews">
+                                <li class="bold-item">
+                                    <span class="dot"></span>
+                                    <a href="http://baijiahao.baidu.com/s?id=1682317642995500617"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=13" target="_blank">最后24小时，特朗普和拜登都拼了！</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Y9XHa9eEl?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=14" target="_blank">朝媒说朝圆满完成“80天战斗”第一个月目标</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/c36dc8/40Y9fCz3vsm?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=15" target="_blank">外媒爆法国教堂外持刀伤人案袭击者新冠阳性</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40YB1f2g72g?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=16" target="_blank">维也纳恐袭事件造成一名奥藉华人身亡
+                                        一名中国公民轻伤</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/c36dc8/40YD7l0E2Wo?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=17"
+                                        target="_blank">美国疫情到哪个阶段了？白宫抗疫专家：最致命阶段</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40YDG89qwaC?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=18" target="_blank">意大利城市米兰市中心发生银行抢劫案</a>
+                                </li>
+                            </ul>
+                            <ul class="ulist focuslistnews">
+                                <li class="bold-item">
+                                    <span class="dot"></span>
+                                    <a href="http://baijiahao.baidu.com/s?id=1682290627375562003"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=19"
+                                        target="_blank">四部门联合约谈马云！央行、银保监会同日发文件</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/2928e7/40Xr9vdgbfm?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=20"
+                                        target="_blank">国家卫健委：新增确诊49例，本土5例均在新疆</a>&nbsp;<a
+                                        href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_3"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=20" target="_blank">动态</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/569e98/40Y2EMmzkn8?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=21" target="_blank">秦岭以一己之力挡住南下冷空气？真相来了</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/f81b43/40Y0k0cNbG4?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=22"
+                                        target="_blank">5死3重伤，北海铁山港码头火灾事故最后一名失联人员已找到</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/9ec6df/40XwChsrSz7?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=23" target="_blank">甘肃兰州一化工厂发生闪爆
+                                        官方通报：未造成人员伤亡<span class="related-video-icon"></span></a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/a4d1ef/40Xq7hj9NKX?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=24"
+                                        target="_blank">5分钟，双11尾款人变收货人！快递真比外卖快？</a></li>
+                            </ul>
+                            <ul class="ulist focuslistnews">
+                                <li class="bold-item">
+                                    <span class="dot"></span>
+                                    <a href="http://baijiahao.baidu.com/s?id=1682291382038732886"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=25" target="_blank">兰州布病多名被感染者确诊
+                                        却收到卫健委“健康证”</a></li>
+                                <li>
+                                    <a href="https://baijiahao.baidu.com/s?id=1682309180974423064&amp;wfr=content"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=26"
+                                        target="_blank">玛莎拉蒂撞宝马案死者女儿抑郁休学，谈及爸爸掉眼泪<span
+                                            class="related-video-icon"></span></a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/24d596/40YD2t6ppkt?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=27" target="_blank">重庆武隆国道319江口段发生路基垮塌</a>
+                                </li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/0c789f/40YEH1m8foG?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=28"
+                                        target="_blank">河南遂平回应"承包商收花生遭数百村民哄抢":村民只是捡拾</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/11ff57/40YCQGPvwUe?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=29"
+                                        target="_blank">“南宁市北大桥发生车祸致人员死伤”？警方：发生在2018年</a></li>
+                                <li>
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Y7FwpLIbF?agt=8"
+                                        mon="ct=1&amp;a=2&amp;c=top&amp;pn=30"
+                                        target="_blank">黑帮杀人埋尸17年，民警在厨房暗洞完成最后的抓捕</a></li>
+                            </ul>
+                        </div>
+                        <div id="pane-recommend" class="mod-tab-pane pane-recommend ">
+                            <div class="mod-tab-loading">
+                                <i class="icon-loading"></i>
+                                <p class="desc">加载中请您耐心等待...</p>
+                            </div>
+                            <div class="tip-wrapper">
+                                <a id="tip" class="mod-headline-tip" href="javascript:void(0);" mon="m=53&amp;a=5">
+                                    <i class="tip-logo"></i>
+                                    <div class="tip-content">点击刷新，将会有未读推荐</div>
+                                </a>
+                            </div>
+                            <script type="text/javascript">
+                                // 如果有图的文章出现白图的情况（图片大小小于10*10则视为白图），去掉图片展示
+                                function checkimg(obj) {
+                                    // console.log('obj.width: ' + obj.width);
+                                    if (obj.naturalWidth < 10) {
+                                        var picWrapper = obj.parentElement.parentElement;
+                                        var item = obj.parentElement.parentElement.parentElement;
+                                        // console.log('-------picWrapper');
+                                        // console.dir(picWrapper);
+                                        // console.log('-------item');
+                                        // console.dir(item);
+                                        picWrapper.style.display = 'none';
+                                        if (item.className.search('notb') > -1) {
+                                            item.className = 'feeds-item-detail notb';
+                                        } else {
+                                            item.className = 'feeds-item-detail';
+                                        }
+                                    }
+                                }
+                            </script>
+                            <div class="feeds" id="feeds"></div>
+                            <div class="feeds-more" id="feeds-more" style="">
+                                <a href="javascript:void(0);" onclick="return false"
+                                    mon="m=53&amp;a=4"><span>更多个性推荐新闻</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-right-col" alog-group="focus-top-right">
+                <div class="toparea-aside-top" alog-group="focustop-carousel">
+                    <div class="imgplayer clearfix" id="imgplayer">
+                        <div id="imgplayer-control" class="carousel-control">
+                            <a href="javascript:void(0);" mon="c=top&amp;a=50&amp;col=4&amp;ct=1&amp;pn=0"
+                                id="imgplayer-prev" class="carousel-btn-prev">
+                                <span class="icon-wrap"></span>
+                            </a>
+                            <a href="javascript:void(0);" mon="c=top&amp;a=52&amp;col=4&amp;ct=1&amp;pn=0"
+                                id="imgplayer-next" class="carousel-btn-next">
+                                <span class="icon-wrap"></span>
+                            </a>
+                        </div>
+                        <div class="imgview" id="imgView"><a href="https://3w.huanqiu.com/a/b1c82f/40XwXxZEr8a?agt=8"
+                                target="_blank" mon="c=top&amp;a=12&amp;col=4&amp;pn=3"><img
+                                    src="./百度新闻——海量中文资讯平台_files/7c26c1bd84a4fecbbb88320412ba08bb.jpeg"></a></div>
+                        <div class="imgnav-mask"></div>
+                        <div class="imgnav" id="imgNav">
+                            <a class="" index="8" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=8"
+                                href="javascript:void(0);">8</a>
+                            <a class="" index="7" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=7"
+                                href="javascript:void(0);">7</a>
+                            <a class="" index="6" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=6"
+                                href="javascript:void(0);">6</a>
+                            <a class="" index="5" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=5"
+                                href="javascript:void(0);">5</a>
+                            <a class="" index="4" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=4"
+                                href="javascript:void(0);">4</a>
+                            <a class="active" index="3" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=3"
+                                href="javascript:void(0);">3</a>
+                            <a class="" index="2" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=2"
+                                href="javascript:void(0);">2</a>
+                            <a class="" index="1" mon="c=top&amp;a=51&amp;col=4&amp;ct=1&amp;pn=1"
+                                href="javascript:void(0);">1</a>
+                        </div>
+                        <div class="imgtit" id="imgTitle"><a href="https://3w.huanqiu.com/a/b1c82f/40XwXxZEr8a?agt=8"
+                                target="_blank" mon="col=4&amp;a=9&amp;ct=1&amp;pn=3"><strong>兰州菊花深秋怒放
+                                    繁花似锦姿态各异</strong></a></div>
+                    </div>
+                    <ul class="sub_19da">
+                        <a class="home-banner-cell left" href="http://www.qstheory.cn/zt2019/llxjj/index.htm"></a>
+                        <a class="home-banner-cell right"
+                            href="http://www.qstheory.cn/zt2017/xcgcdd19djs/index.htm"></a>
+                    </ul>
+                    <div class="sda_line">
+                    </div>
+                </div>
+                <div alog-group="focus-top-news-hotwords">
+                    <div class="mod h-bd-box" id="news-hotwords">
+                        <div class="hd line">
+                            <h3>热搜新闻词<span class="en">HOT WORDS</span></h3>
+                        </div>
+                        <div class="bd">
+                            <ul class="hotwords clearfix">
+                                <li class="li_0 li_color_0 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%BA%94%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE%E5%9C%A8%E4%BA%AC%E5%8F%AC%E5%BC%80"
+                                        target="_blank" class="hotwords_li_a" title="中国共产党第十九届中央委员会第五次全体会议在京召开"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=1"
+                                        style="top: 13.5px;">中国共产党第十九届中央委员会第五次<br>全体会议在京召开</a>
+                                </li>
+                                <li class="li_1 li_color_1 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%90%91%E4%B8%96%E7%95%8C%E9%A1%B6%E5%B0%96%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%AE%BA%E5%9D%9B%E8%A7%86%E9%A2%91%E8%87%B4%E8%BE%9E"
+                                        target="_blank" class="hotwords_li_a" title="习近平向世界顶尖科学家论坛视频致辞"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=2"
+                                        style="top: 23px;">习近平向世界顶尖<br>科学家论坛视频致辞</a>
+                                </li>
+                                <li class="li_2 li_color_2 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E4%B8%AD%E4%BC%A0%E5%8E%9F%E5%89%AF%E6%A0%A1%E9%95%BF%E8%94%A1%E7%BF%94%E8%8E%B7%E5%88%91%E4%B8%89%E5%B9%B4%E5%8D%8A"
+                                        target="_blank" class="hotwords_li_a" title="中传原副校长蔡翔获刑三年半"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=3" style="top: 29px;">中传原副校长蔡翔获刑三年半</a>
+                                </li>
+                                <li class="li_3 li_color_3 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E5%BE%8B%E5%B8%88%E8%B0%88%E9%AB%98%E9%93%81%E6%8B%92%E7%BB%9D%E4%B8%BA%E5%A5%B3%E5%AD%90%E5%86%B7%E8%97%8F%E6%AF%8D%E4%B9%B3"
+                                        target="_blank" class="hotwords_li_a" title="律师谈高铁拒绝为女子冷藏母乳"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=4" style="top: 29px;">律师谈高铁拒绝为女子冷藏母乳</a>
+                                </li>
+                                <li class="li_4 li_color_4 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8F%91%E6%98%8E%E8%80%81%E4%BA%BA%E8%B5%B7%E8%A1%8C%E6%97%A0%E5%BF%A7%E6%A4%85"
+                                        target="_blank" class="hotwords_li_a" title="大学生发明老人起行无忧椅"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=5" style="top: 29px;">大学生发明<br>老人起行无忧椅</a>
+                                </li>
+                                <li class="li_5 li_color_5 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E4%BA%AC%E6%B2%AA%E9%AB%98%E9%93%81%E5%9B%9E%E5%BA%94%E7%81%B5%E6%B4%BB%E7%A5%A8%E4%BB%B7"
+                                        target="_blank" class="hotwords_li_a" title="京沪高铁回应灵活票价"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=6" style="top: 29px;">京沪高铁回应<br>灵活票价</a>
+                                </li>
+                                <li class="li_6 li_color_6 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E6%AD%A6%E6%B1%89%E8%A1%97%E5%A4%B4%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%97%A0%E7%BA%BF%E5%85%85%E7%94%B5%E8%B7%AF%E7%81%AF"
+                                        target="_blank" class="hotwords_li_a" title="武汉街头现手机无线充电路灯"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=7" style="top: 29px;">武汉街头现手机无线充电路灯</a>
+                                </li>
+                                <li class="li_7 li_color_7 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E9%9F%A9%E5%9B%BD%E8%8A%B11.2%E4%B8%87%E4%BA%BF%E5%85%83%E5%82%AC%E5%A9%9A%E4%B8%8D%E7%AE%A1%E7%94%A8"
+                                        target="_blank" class="hotwords_li_a" title="韩国花1.2万亿元催婚不管用"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=8" style="top: 29px;">韩国花1.2万亿元催婚不管用</a>
+                                </li>
+                                <li class="li_8 li_color_8 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E5%A4%AE%E8%A7%86%E5%91%BC%E5%90%81%E5%8F%8C11%E4%BF%83%E9%94%80%E5%B0%91%E4%B8%80%E4%BA%9B%E5%A5%97%E8%B7%AF"
+                                        target="_blank" class="hotwords_li_a" title="央视呼吁双11促销少一些套路"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=9" style="top: 29px;">央视呼吁双11促销少一些套路</a>
+                                </li>
+                                <li class="li_9 li_color_9 button-slide">
+                                    <a href="https://www.baidu.com/s?wd=%E7%BE%8E%E5%9B%BD%E5%A4%A7%E9%80%89%E9%80%89%E4%B8%BE%E6%97%A5%E6%8A%95%E7%A5%A8%E6%AD%A3%E5%BC%8F%E5%BC%80%E5%A7%8B"
+                                        target="_blank" class="hotwords_li_a" title="美国大选选举日投票正式开始"
+                                        mon="ct=1&amp;c=top&amp;a=30&amp;pn=10" style="top: 29px;">美国大选选举日投票正式开始</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-baijia column clearfix" id="baijia" alog-group="log-baijia">
+                    <div class="column-title-home">
+                        <div class="column-title-border">
+                            <h2>
+                                <span class="column-title">百家号</span>
+                                <span class="en">BAIJIA</span>
+                            </h2>
+                            <div class="sub-class">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-middle-col" style="height:305px;" alog-group="log-baijia-left-up">
+                        <div class="imagearea">
+                            <div class="imagearea-top" style="height:164px;">
+                                <div class="image-mask-item">
+                                    <a href="http://baijiahao.baidu.com/s?id=1682296984239691255" target="_blank"
+                                        class="item-image" mon="&amp;a=12" title="苹果的下个时代，从今年双十一开始"
+                                        style="background-image:url(http://contentcms-bj.cdn.bcebos.com/cmspic/eb069d971ba76b623737d12cab69300a.jpeg?x-bce-process=image/crop,x_53,y_0,w_535,h_359)"></a>
+                                    <a href="http://baijiahao.baidu.com/s?id=1682296984239691255" target="_blank"
+                                        class="item-title" title="苹果的下个时代，从今年双十一开始" mon="&amp;a=9">苹果的下个时代，从今年双十一开始</a>
+                                </div>
+                            </div>
+                            <div class="imagearea-bottom">
+                                <div class="image-list-item">
+                                    <a href="http://baijiahao.baidu.com/s?id=1682235878113701214"
+                                        title="为何你还甘心沦为双数一“尾款人”？" target="_blank" mon="&amp;a=12" class="img"
+                                        style="background-image:url(http://contentcms-bj.cdn.bcebos.com/cmspic/eae6f3c95502e194c34ea103fcbb19d0.jpeg?x-bce-process=image/crop,x_32,y_0,w_1144,h_767)"></a><a
+                                        href="http://baijiahao.baidu.com/s?id=1682235878113701214" mon="&amp;a=9"
+                                        class="txt" target="_blank">为何你还甘心沦为双数一“尾款人”？</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="http://baijiahao.baidu.com/s?id=1682241133778687218"
+                                        title="iPhone难续苹果“中国梦”" target="_blank" mon="&amp;a=12" class="img"
+                                        style="background-image:url(http://contentcms-bj.cdn.bcebos.com/cmspic/6ae00ea65fe43985c593e5a661d95315.jpeg?x-bce-process=image/crop,x_18,y_0,w_465,h_312)"></a><a
+                                        href="http://baijiahao.baidu.com/s?id=1682241133778687218" mon="&amp;a=9"
+                                        class="txt" target="_blank">iPhone难续苹果“中国梦”</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-right-col" style="width:290px;" alog-group="log-baijia-right-up">
+                        <div class="baijia-focus-list">
+                            <ul class="ulist bdlist">
+                                <li class="bold-item"><a href="http://baijiahao.baidu.com/s?id=1682241783044570932"
+                                        target="_blank" mon="a=9">饿了么奇袭美团，双11“囤”势汹汹</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682293981437292705" target="_blank"
+                                        mon="a=9">腾讯寻求参加美国微信禁令的诉讼,以保护数据</a></li>
+                                <li><a href="https://baijiahao.baidu.com/s?id=1682296468131122563&amp;wfr=content"
+                                        target="_blank" mon="a=9">直播打赏将设置冷静期，民众：非常必要</a></li>
+                                <li><a href="https://baijiahao.baidu.com/s?id=1682238274357054909&amp;wfr=content"
+                                        target="_blank" mon="a=9">已有5家芯片厂商获准供货华为,索尼等新获批</a></li>
+                                <li><a href="https://baijiahao.baidu.com/s?id=1682242049354386785&amp;wfr=content"
+                                        target="_blank" mon="a=9">iPhone4被制成标本售卖，要吗？</a></li>
+                            </ul>
+                            <ul class="ulist bdlist" style="padding-top:5px">
+                                <li class="bold-item"><a
+                                        href="https://baijiahao.baidu.com/s?id=1682243063857390598&amp;wfr=content"
+                                        target="_blank" mon="a=9">电商巨头如何让你成为平台“打工人”？</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682261047658925367" target="_blank"
+                                        mon="a=9">苹果的半条命，并不在 iPhone 12 上</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682238010989218228" target="_blank"
+                                        mon="a=9">为何说IT科技公司应该留住35岁员工？</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682206925862074367" target="_blank"
+                                        mon="a=9">《原神》们要革华为小米的命</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682299948792300661" target="_blank"
+                                        mon="a=9">腾讯投资部到底咋想的？</a></li>
+                            </ul>
+                            <ul class="ulist bdlist" style="padding-top:5px">
+                                <li class="bold-item"><a href="http://baijiahao.baidu.com/s?id=1682212048209620559"
+                                        target="_blank" mon="a=9">中视频，不是字节跳动的解药</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682218268431927479" target="_blank"
+                                        mon="a=9">直播带货决战双11</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682158127621589599" target="_blank"
+                                        mon="a=9">京东方凭啥大涨600%？</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682108560497777523" target="_blank"
+                                        mon="a=9">苹果和亚马逊在德国面临反垄断审查</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682025445657936829" target="_blank"
+                                        mon="a=9">iPhone 迟到，苹果头痛</a></li>
+                                <li><a href="http://baijiahao.baidu.com/s?id=1682210529510483479" target="_blank"
+                                        mon="a=9">外媒：华为拟建造不用美国技术的芯片制造厂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-middle-col" alog-group="log-baijia-left-down">
+                        <div class="mod tbox" id="baijia-aside-recommend">
+                            <div class="bd" style="position:relative;height:160px;overflow:hidden;">
+                                <div class="imagearea">
+                                    <div class="imagearea-top">
+                                        <div class="image-mask-item">
+                                            <a href="http://baijiahao.baidu.com/s?id=1682299021098061966"
+                                                target="_blank" class="item-image" mon="&amp;a=12" title="电子烟“断网”这一年"
+                                                style="background-image:url(http://contentcms-bj.cdn.bcebos.com/cmspic/e27d98854b4e68a3a504f5273785f73f.jpeg?x-bce-process=image/crop,x_55,y_0,w_572,h_384)"></a>
+                                            <a href="http://baijiahao.baidu.com/s?id=1682299021098061966"
+                                                target="_blank" class="item-title" title="电子烟“断网”这一年"
+                                                mon="&amp;a=9">电子烟“断网”这一年</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 国家新闻 -->
+        <div class="civilnews">
+            <div class="column clearfix" id="guonei">
+                <div class="column-title-home" alog-group="log-civil-title">
+                    <div class="column-title-border">
+                        <h2><a href="https://news.baidu.com/guonei" target="_blank">国内</a><span
+                                class="cname">China</span></h2>
+                    </div>
+                </div>
+                <div class="l-left-col col-mod" alog-group="log-civil-left">
+                    <ul class="ulist focuslistnews">
+                        <li class="bold-item">
+                            <span class="dot"></span>
+                            <a href="https://3w.huanqiu.com/a/2928e7/40Xr9vdgbfm?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=1" target="_blank">国家卫健委：新增确诊49例，本土5例均在新疆</a>
+                        </li>
+                        <li>
+                            <a href="https://3w.huanqiu.com/a/c36dc8/40XyPZhzEsX?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=2"
+                                target="_blank">林郑月娥回应8名反对派人士被拘捕：法律面前人人平等</a></li>
+                        <li>
+                            <a href="https://3w.huanqiu.com/a/21eee3/40Xx7wJMub0?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=3" target="_blank">黎智英涉煽惑非法集结案审理押后
+                                明年2月5日再提讯</a></li>
+                        <li>
+                            <a href="https://top.voc.com.cn/bd_news/article/183223/1.html"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=4" target="_blank">“双11”刚来！有人被骗近20万</a></li>
+                        <li>
+                            <a href="https://top.voc.com.cn/bd_news/article/183053/1.html"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=5" target="_blank">傻眼！相恋3年男友骗走40万失联</a></li>
+                        <li>
+                            <a href="https://top.voc.com.cn/bd_news/article/183155/1.html"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=6" target="_blank">列车撞穿护栏 车厢悬挂半空</a></li>
+                    </ul>
+                    <ul class="ulist focuslistnews">
+                        <li class="bold-item">
+                            <span class="dot"></span>
+                            <a href="https://3w.huanqiu.com/a/a4d1ef/40Xq8tmK6fe?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=7" target="_blank">11月起，社保迎来一个大变化，影响你的钱袋子</a>
+                        </li>
+                        <li>
+                            <a href="https://3w.huanqiu.com/a/24d596/40Xz11Vf0W1?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=8" target="_blank">福建宁德初二女生校内遭围殴 当地教育局已启动调查</a>
+                        </li>
+                        <li>
+                            <a href="https://3w.huanqiu.com/a/9ec6df/40XwChsrSz7?agt=8"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=9" target="_blank">甘肃兰州一化工厂发生闪爆
+                                官方通报：未造成人员伤亡</a></li>
+                        <li>
+                            <a href="https://top.voc.com.cn/bd_news/article/183136/1.html"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=10" target="_blank">男子送女孩氢气球 下一秒发生恐怖一幕</a></li>
+                        <li>
+                            <a href="https://top.voc.com.cn/bd_news/article/183085/1.html"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=11" target="_blank">玛莎拉蒂撞死退休教师 司机疑态度冷漠</a></li>
+                        <li>
+                            <a href="http://baijiahao.baidu.com/s?id=1682320183591333964"
+                                mon="ct=0&amp;a=2&amp;c=civilnews&amp;pn=12" target="_blank">全国羽毛球锦标赛团体赛落幕
+                                湖南队福建队分获男女团..</a></li>
+                    </ul>
+                </div>
+                <div class="l-middle-col" alog-group="log-civil-middle">
+                    <div class="mod">
+                        <div class="hd">
+                            <h3>国内图片</h3>
+                        </div>
+                        <div class="bd">
+                            <div class="imagearea">
+                                <div class="imagearea-top">
+                                    <div class="image-mask-item">
+                                        <a href="http://baijiahao.baidu.com/s?id=1661413551368574552" target="_blank"
+                                            class="item-image" mon="ct=0&amp;c=civilnews&amp;pn=1&amp;a=12"
+                                            title="国内适合亲子游的五个地方，一家人一起旅行才完美"><img
+                                                src="./百度新闻——海量中文资讯平台_files/u=1261506394,653536030&amp;fm=173&amp;app=49&amp;f=JPEG"
+                                                alt="国内适合亲子游的五个地方，一家人一起旅行才完美"></a>
+                                        <a href="http://baijiahao.baidu.com/s?id=1661413551368574552" target="_blank"
+                                            class="item-title" title="国内适合亲子游的五个地方，一家人一起旅行才完美"
+                                            mon="ct=0&amp;c=civilnews&amp;pn=1&amp;a=9">国内适合亲子游的五个地方，一家人一起旅行才完美</a>
+                                    </div>
+                                </div>
+                                <div class="imagearea-bottom">
+                                    <div class="image-list-item">
+                                        <a href="http://baijiahao.baidu.com/s?id=1681980424832642229"
+                                            title="二胎家庭“最强组合”，一儿一女不再是首选，很多家庭.." target="_blank"
+                                            mon="ct=0&amp;c=civilnews&amp;pn=2&amp;a=12"><img
+                                                src="./百度新闻——海量中文资讯平台_files/u=882484685,4053253223&amp;fm=173&amp;app=49&amp;f=JPEG"></a><a
+                                            href="http://baijiahao.baidu.com/s?id=1681980424832642229"
+                                            mon="ct=0&amp;c=civilnews&amp;pn=2&amp;a=9" class="txt"
+                                            target="_blank">二胎家庭“最强组合”，一儿一女不再是首选，很多家庭..</a>
+                                    </div>
+                                    <div class="image-list-item">
+                                        <a href="http://baijiahao.baidu.com/s?id=1682228666761476773"
+                                            title="爱在课上“转笔”的学生，大多是这5类高中生，你是其.." target="_blank"
+                                            mon="ct=0&amp;c=civilnews&amp;pn=3&amp;a=12"><img
+                                                src="./百度新闻——海量中文资讯平台_files/u=582247810,1190677583&amp;fm=173&amp;app=49&amp;f=JPEG"></a><a
+                                            href="http://baijiahao.baidu.com/s?id=1682228666761476773"
+                                            mon="ct=0&amp;c=civilnews&amp;pn=3&amp;a=9" class="txt"
+                                            target="_blank">爱在课上“转笔”的学生，大多是这5类高中生，你是其..</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-right-col" alog-group="log-civil-right">
+                    <div class="mod" id="aside-civil-pic">
+                        <div class="hd">
+                            <h3>图文资讯</h3>
+                        </div>
+                        <div class="bd">
+                            <div class="image-list">
+                                <div class="image-list-wrapper">
+                                    <div class="image-list-item">
+                                        <a href="http://baijiahao.baidu.com/s?id=1681937163031725519"
+                                            title="应采儿二胎剖腹产过程上热搜，戴眼镜为了看更清吗？陈.." target="_blank"
+                                            mon="ct=0&amp;a=28&amp;c=civilnews&amp;pn=4"><img
+                                                src="./百度新闻——海量中文资讯平台_files/u=1175745978,2643665888&amp;fm=173&amp;app=25&amp;f=JPEG"></a><a
+                                            href="http://baijiahao.baidu.com/s?id=1681937163031725519"
+                                            mon="ct=0&amp;a=28&amp;c=civilnews&amp;pn=4" class="txt"
+                                            target="_blank">应采儿二胎剖腹产过程上热搜，戴眼镜为了看更清吗？陈..</a>
+                                    </div>
+                                    <div class="image-list-item">
+                                        <a href="http://baijiahao.baidu.com/s?id=1649594033079306457"
+                                            title="毁掉一个人的三种“迹象”，你身上若有一种，就要警惕.." target="_blank"
+                                            mon="ct=0&amp;a=28&amp;c=civilnews&amp;pn=5"><img
+                                                src="./百度新闻——海量中文资讯平台_files/u=979110256,971266479&amp;fm=173&amp;app=49&amp;f=JPEG"></a><a
+                                            href="http://baijiahao.baidu.com/s?id=1649594033079306457"
+                                            mon="ct=0&amp;a=28&amp;c=civilnews&amp;pn=5" class="txt"
+                                            target="_blank">毁掉一个人的三种“迹象”，你身上若有一种，就要警惕..</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod tbox" id="civil-aside-tophit">
+                        <div class="hd">
+                            <h3>热门点击</h3>
+                        </div>
+                        <div class="bd">
+                            <ol class="olist " id="">
+                                <li><span class="listnum num1"></span><a
+                                        href="http://baijiahao.baidu.com/s?id=1682151496683084815" target="_blank"
+                                        title="指责中国，美国政客哪来的脸？"
+                                        mon="c=civilnews&amp;ct=0&amp;a=27&amp;col=8&amp;pn=1">指责中国，美国政客哪来的脸？</a></li>
+                                <li><span class="listnum num2"></span><a
+                                        href="http://baijiahao.baidu.com/s?id=1655867352117612681" target="_blank"
+                                        title="漫画｜我家都是“环保控”"
+                                        mon="c=civilnews&amp;ct=0&amp;a=27&amp;col=8&amp;pn=2">漫画｜我家都是“环保控”</a></li>
+                                <li><span class="listnum num3"></span><a
+                                        href="https://top.voc.com.cn/bd_news/article/181627/1.html" target="_blank"
+                                        title="怕走丢？俩孩童被锁在铁笼内"
+                                        mon="c=civilnews&amp;ct=0&amp;a=27&amp;col=8&amp;pn=3">怕走丢？俩孩童被锁在铁笼内</a></li>
+                                <li><span class="listnum num4"></span><a
+                                        href="http://baijiahao.baidu.com/s?id=1682143838334782047" target="_blank"
+                                        title="余承东撕下苹果“遮羞布”，iPhone12环保只是.."
+                                        mon="c=civilnews&amp;ct=0&amp;a=27&amp;col=8&amp;pn=4">余承东撕下苹果“遮羞布”，iPhone12环保只是..</a>
+                                </li>
+                                <li><span class="listnum num5"></span><a
+                                        href="http://baijiahao.baidu.com/s?id=1682314272171966960" target="_blank"
+                                        title="可循环和环保 米其林给你展示它的现在与未来"
+                                        mon="c=civilnews&amp;ct=0&amp;a=27&amp;col=8&amp;pn=5">可循环和环保 米其林给你展示它的现在与未来</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="PicWall">
+            <div class="column clearfix" id="tupianxinwen">
+                <div class="column-title-home">
+                    <div class="column-title-border">
+                        <h2><a href="javascript:void(0);" style="text-decoration:none;">图片新闻</a><span
+                                class="cname">Photos</span></h2>
+                    </div>
+                </div>
+                <div class="mod" id="image-list-news" alog-group="log-photos-all">
+                    <div class="bd">
+                        <div class="image-list">
+                            <div class="image-list-wrapper">
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/58ef16/40XpYFAVOCC?agt=8" title="探访“考古圣地”裴李岗遗址"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=1&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/d6f682a424f9d16ecc14f3fd6c43f279.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/58ef16/40XpYFAVOCC?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=1&amp;a=9" class="txt"
+                                        target="_blank">探访“考古圣地”裴李岗遗址</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Xpg6mWNml?agt=8" title="滦州：500万吨特钢投入生产"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=2&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/918f6daf6367e6588e3da95de020fce6.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40Xpg6mWNml?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=2&amp;a=9" class="txt" target="_blank"
+                                        se_prerender_url="complete">滦州：500万吨特钢投入生产</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Xpi1cCi00?agt=8" title="中俄天然气管道工程加紧建设"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=3&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/ba99345c0c7bf70e21a95dc013505fca.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40Xpi1cCi00?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=3&amp;a=9" class="txt"
+                                        target="_blank">中俄天然气管道工程加紧建设</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40XpwEtsf4i?agt=8" title="跨海高铁施工忙"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=4&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/7649bf3ab9a889e58919b2e1bb96f5ef.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40XpwEtsf4i?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=4&amp;a=9" class="txt"
+                                        target="_blank">跨海高铁施工忙</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40XpzR88N0f?agt=8" title="西安：老旧小区重焕光彩"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=5&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/209e31ed1bfa31d44c14789677b4f127.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40XpzR88N0f?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=5&amp;a=9" class="txt"
+                                        target="_blank">西安：老旧小区重焕光彩</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40XpyVYPR6o?agt=8" title="千亩银杏引客来"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=6&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/a95a1ef5a48d7e914f9ec2f61b6db982.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40XpyVYPR6o?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=6&amp;a=9" class="txt"
+                                        target="_blank">千亩银杏引客来</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Xpx96JMTZ?agt=8" title="河北邯郸：家风家训代代传"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=7&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/4d27892885551e82706fe0c0077f9dba.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40Xpx96JMTZ?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=7&amp;a=9" class="txt"
+                                        target="_blank">河北邯郸：家风家训代代传</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40XpiakLeZ2?agt=8" title="浙江路桥：紫菜迎来丰收季"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=8&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/6e940d540fdd6fb63efbf9e409dfb10f.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40XpiakLeZ2?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=8&amp;a=9" class="txt"
+                                        target="_blank">浙江路桥：紫菜迎来丰收季</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/3458fa/40Xpc6mvxPy?agt=8" title="贵州玉屏：油茶鲜果烘干助增收"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=9&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/e12dc932c79f3fb79b3ce50646169664.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/3458fa/40Xpc6mvxPy?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=9&amp;a=9" class="txt"
+                                        target="_blank">贵州玉屏：油茶鲜果烘干助增收</a>
+                                </div>
+                                <div class="image-list-item">
+                                    <a href="https://3w.huanqiu.com/a/a4d1ef/40XpWb9Y2b0?agt=8" title="青海民和灵芝首获丰收"
+                                        target="_blank" mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=10&amp;a=12"><img
+                                            src="./百度新闻——海量中文资讯平台_files/f07ddaa5f151ad5a7c3b09163a704e93.jpeg"></a><a
+                                        href="https://3w.huanqiu.com/a/a4d1ef/40XpWb9Y2b0?agt=8"
+                                        mon="c=picnews&amp;ct=0&amp;col=24&amp;pn=10&amp;a=9" class="txt"
+                                        target="_blank">青海民和灵芝首获丰收</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hua tu </title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="do.js"></script>
+</head>
+<!--
+    Canvas - 文本
+使用 canvas 绘制文本，重要的属性和方法如下：
+
+font - 定义字体
+fillText(text,x,y) - 在 canvas 上绘制实心的文本
+strokeText(text,x,y) - 在 canvas 上绘制空心的文本
+使用 fillText():
+    canvas 是一个二维网格。
+
+canvas 的左上角坐标为 (0,0)
+    var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(0,0,150,75);
+    moveTo(x,y) 定义线条开始坐标
+lineTo(x,y) 定义线条结束坐标
+Canvas - 图像
+把一幅图像放置到画布上, 使用以下方法:
+
+drawImage(image,x,y)
+
+-->
+
+<body>
+    <div>
+        <h1>我的画板 2020.11.13</h1>
+    </div>
+    <ul>
+        <li><a href="#home">主页</a></li>
+        <li><a href="#news">新闻</a></li>
+        <li><a href="#contact">联系</a></li>
+        <li><a href="#about">关于</a></li>
+    </ul>
+    <div class="back">
+        <div class="draw_area">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 950, 975);
+        </script>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FFFF00";
+            ctx.fillRect(0, 0, 50, 100);
+        </script>
+    </div>
+
+    <div class="back">
+        <p>4--sdfsqwe34545345</p>
+        <p>5--dfsdfdsfsdfsdf</p>
+    </div>
+    <div class="grid">
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+        <div class="back">
+            5987
+        </div>
+        <b>12</b>
+        <b>2</b>
+        <p>789</p>
+        <p>447777</p>
+        <a href="8448"></a>
+
+        <h1>5</h1>
+        <h1>6</h1>
+        <div>
+            <p>1--dfsdfdsfsdfsdf</p>
+            <p>2--sdfsqwe34545345</p>
+            <p>3--dfsdfdsfsdfsdf</p>
+            <p>4--sdfsqwe34545345</p>
+            <p>5--dfsdfdsfsdfsdf</p>
+            <p>6--sdfsqwe34545345</p>
+            <p>7--sdfsqwe34545345</p>
+            <p>8--dfsdfdsfsdfsdf</p>
+            <p>9--sdfsqwe34545345</p>
+        </div>
+        <div>
+            <p>11--dfsdfdsfsdfsdf</p>
+            <p>12--sdfsqwe34545345</p>
+            <p>13--dfsdfdsfsdfsdf</p>
+            <p>14--sdfsqwe34545345</p>
+            <p>15--dfsdfdsfsdfsdf</p>
+            <p>16--sdfsqwe34545345</p>
+            <p>17--sdfsqwe34545345</p>
+            <p>18--dfsdfdsfsdfsdf</p>
+            <p>19--sdfsqwe34545345</p>
+        </div>
+        <div>
+            <p>1--dfsdfdsfsdfsdf</p>
+            <p>2--sdfsqwe34545345</p>
+            <p>3--dfsdfdsfsdfsdf</p>
+            <p>4--sdfsqwe34545345</p>
+            <p>5--dfsdfdsfsdfsdf</p>
+            <p>6--sdfsqwe34545345</p>
+            <p>7--sdfsqwe34545345</p>
+            <p>8--dfsdfdsfsdfsdf</p>
+            <p>9--sdfsqwe34545345</p>
+        </div>
+        <div>
+            <p>11--dfsdfdsfsdfsdf</p>
+            <p>12--sdfsqwe34545345</p>
+            <p>13--dfsdfdsfsdfsdf</p>
+            <p>14--sdfsqwe34545345</p>
+            <p>15--dfsdfdsfsdfsdf</p>
+            <p>16--sdfsqwe34545345</p>
+            <p>17--sdfsqwe34545345</p>
+            <p>18--dfsdfdsfsdfsdf</p>
+            <p>19--sdfsqwe34545345</p>
+        </div>
+        <p>11--dfsdfdsfsdfsdf</p>
+        <p>12--sdfsqwe34545345</p>
+        <p>13--dfsdfdsfsdfsdf</p>
+        <p>14--sdfsqwe34545345</p>
+        <p>15--dfsdfdsfsdfsdf</p>
+
+    </div>
+</body>
+<footer>
+    <p>14--sdfsqwe34545345</p>
+    <p>15--dfsdfdsfsdfsdf</p>
+</footer>
+<aside>
+    <h4>Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+
+</html>

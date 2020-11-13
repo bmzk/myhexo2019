@@ -1,0 +1,159 @@
+.map {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+}
+
+div {
+    text-align: center;
+    color: rgb(3, 30, 119);
+    font-family: arial;
+}
+
+.div1 {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 5;
+}
+
+.grid {
+    column-count: 2;
+    column-rule-style: solid;
+    /*属性指定了列与列间的边框样式：*/
+    column-rule: 5px solid lightblue;
+    /*设置了列直接的边框的厚度，样式及颜色*/
+    column-gap: 40px;
+    /*指定列与列间的间隙为 40 像素：*/
+}
+
+#myCanvas {
+    width: 21500px;
+    height: 1000px;
+    border: 10px solid #000000;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.back {
+    background-image: url(img/tt.png);
+    background-position: top;
+    background-repeat: repeat;
+}
+
+.draw_area {
+    width: 1000px;
+    height: 500px;
+    border: 10px solid #8a0000;
+    padding: 15px;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    width: 60px;
+}
+
+
+/*
+CSS3 多列属性
+本章节我们将学习以下几个 CSS3 的多列属性:
+
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width
+CSS3 创建多列
+column-count 属性指定了需要分割的列数。
+
+以下实例将 <div> 元素中的文本分为 3 列：
+
+实例
+div {
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+}
+
+CSS3 多列中列与列间的间隙
+column-gap 属性指定了列与列间的间隙。
+
+以下实例指定了列与列间的间隙为 40 像素：
+div {
+    -webkit-column-gap: 40px; 
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+CSS3 列边框
+column-rule-style 属性指定了列与列间的边框样式：
+div {
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera 
+    -moz-column-rule-style: solid; /* Firefox 
+    column-rule-style: solid;
+}
+
+column-rule-width 属性指定了两列的边框厚度:
+div {
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera 
+    -moz-column-rule-width: 1px; /* Firefox 
+    column-rule-width: 1px;
+}
+
+column-rule-color 属性指定了两列的边框颜色：
+div {
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera 
+    -moz-column-rule-color: lightblue; /* Firefox 
+    column-rule-color: lightblue;
+}
+
+尝试一下 »
+column-rule 属性是 column-rule-* 所有属性的简写。
+
+以下实例设置了列直接的边框的厚度，样式及颜色：
+div {
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera 
+    -moz-column-rule: 1px solid lightblue; /* Firefox 
+    column-rule: 1px solid lightblue;
+}
+
+指定元素跨越多少列
+以下实例指定 <h2> 元素跨越所有列：
+h2 {
+    -webkit-column-span: all; /* Chrome, Safari, Opera 
+    column-span: all;}
+
+指定列的宽度
+column-width 属性指定了列的宽度。
+div {
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera 
+    column-width: 100px;}
+
+尝试一下 »
+CSS3 多列属性
+下表列出了所有 CSS3 的多列属性：
+
+属性	描述
+column-count	指定元素应该被分割的列数。
+column-fill	指定如何填充列
+column-gap	指定列与列之间的间隙
+column-rule	所有 column-rule-* 属性的简写
+column-rule-color	指定两列间边框的颜色
+column-rule-style	指定两列间边框的样式
+column-rule-width	指定两列间边框的厚度
+column-span	指定元素要跨越多少列
+column-width	指定列的宽度
+columns	column-width 与 column-count 的简写属性。
+
+
+*/
